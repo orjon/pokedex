@@ -3,13 +3,11 @@ import './css/Pokecard.css';
 
 class Pokecard extends Component {
   render() {
-  const image = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${this.props.id}.png`
+  // const image = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${this.props.id}.png`
 
   let padToThree = number => (number <= 999 ? `00${number}`.slice(-3): number)
 
-  const paddedId = padToThree(this.props.id)
-
-  const imageHighRes = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${paddedId}.png`
+  const imageHighRes = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${padToThree(this.props.id)}.png`
   
   const imageAlt = `Image of ${this.props.name}` 
     return(
@@ -24,5 +22,3 @@ class Pokecard extends Component {
 }
 
 export default Pokecard;
-
-//Name image type & Experience

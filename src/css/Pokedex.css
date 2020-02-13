@@ -5,10 +5,23 @@
   align-items: center;
 }
 
+h1, h2 {
+  margin: 0px;
+}
+
 .Pokedex-cards {
   display: grid;
   grid-template-columns: 1fr;
   border: 0px solid green;
+}
+
+
+.Pokedex-Winner {
+  color: green;
+}
+
+.Pokedex-Loser {
+  color: red;
 }
 
 @media screen and (min-width: 500px){
@@ -34,30 +47,30 @@
 
 @media screen and (min-width: 1175px){
   .Pokedex-cards {
-    width: 1125px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    /* width: 1125px; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
 
 @media screen and (min-width: 1400px){
   .Pokedex-cards {
-    width: 1340px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* width: 1340px; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
 @media screen and (min-width: 1600px){
   .Pokedex-cards {
-    width: 1560px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* width: 1560px; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
 
 @media screen and (min-width: 1850px){
   .Pokedex-cards {
-    width: 1800px;
+    /* width: 1800px; */
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 }
