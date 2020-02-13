@@ -1,4 +1,4 @@
-# A very useful Pokemon Card viewer
+# Simple Pokemon card game
 
 Experiments with React
 
